@@ -12,7 +12,13 @@ print("my name is Zainab" +" " + last_name)
 #loop/for - used for a finite argument
 #Nested-loop : having a loop indside a loop
 #loop control statements - change a loop exectution from it's normal sequence
-#
+#list - used to store multiple items in a single variable,items in a list are called 'elements'(str ot int) and they are enclosed in [] and ordered
+#tuples - immutable, store related items in normal brackets
+#set - unordered collection,unindexed,doesn't duplicate in curly braces
+#dictionary - changable,unordered collection of unique keyvalue pairs in {}
+#dictionary attributes - .keys,.values,.update,.remove,.items
+#index operator []- gives access to a sequence element
+#function - a block of code which is executed when it's called, we "define" a function(def)
 #
 #
 #
@@ -64,3 +70,17 @@ for i in range(rows):
     for j in range(columns):
         print(symbol,sep= " ",end= " ")#sep and end has to be none or str
     print()
+food = ["pizza","yam","tea",5]
+print(food[3])
+for i in food:
+    print(i, sep=" ",end=" ")
+food.insert(1,"tomato")#add an item to a list in a specific position & append-add an element to a list
+print(food)
+drink = ["fanta","coke","tomato"]
+dessert = ["cake","chocolate"]
+menu = [food,drink,dessert]#2D list- list of lists
+print(menu[0][ :1])
+student = ("Zainab", 22, "dev")#tuples,attributes(.count,.index). set attributes(.update,.union,.difference,.intersection)
+def hello(last_name):
+    print("hello"+" " + last_name)
+hello(first_name)
